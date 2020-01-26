@@ -1,0 +1,5 @@
+config.yml
+tokens.yml
+picture_cache.yml
+assets
+*.session

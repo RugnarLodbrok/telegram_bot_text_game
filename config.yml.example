@@ -1,0 +1,7 @@
+token: "000000000:abcdefgh0dsdsfjedsfdjkhfjkdaksdfdfd"
+proxy: # section is optional
+  host: "hostname"
+  port: 8888
+admin_id: 299070254
+api_id: 000000
+api_hash: abcdef4334343543543254523543432
