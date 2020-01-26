@@ -3,8 +3,8 @@ from contextlib import contextmanager
 from collections import defaultdict
 from telegram.ext import MessageHandler, Filters, CommandHandler
 
-from my_bot.picture_sender import PictureSender
-from my_bot.scene import Scene
+from src.picture_sender import PictureSender
+from src.scene import Scene
 
 
 class GameContext:

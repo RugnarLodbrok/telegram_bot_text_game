@@ -10,8 +10,8 @@ sys.path.insert(1, os.path.normpath(os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     os.path.pardir)))
 
-from my_bot.consts import *
-from my_bot.game import run_game
+from src.consts import *
+from src.game import run_game
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
