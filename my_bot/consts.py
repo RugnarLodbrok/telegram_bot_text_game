@@ -1,7 +1,7 @@
-import yaml
+import yaml as _yaml
 
 with open('config.yml', 'rt') as f:
-    cfg = yaml.load(f, Loader=yaml.BaseLoader)
+    cfg = _yaml.load(f, Loader=_yaml.BaseLoader)
 
 if cfg['proxy']:
     _proxy_host = cfg['proxy']['host']

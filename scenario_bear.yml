@@ -1,0 +1,30 @@
+- name: start
+  text: "..."
+  opts:
+    - text: "начать"
+      goto: field
+- name: field
+  picture: 1.jpg
+  text: "ты вышел в поле"
+  opts:
+    - text: "далее"
+      goto: kurevo
+- name: kurevo
+  picture: 2.jpg
+  text: "ты куришь [RKN]"
+  opts:
+    - text: "курить"
+      goto: mashina
+    - text: "посмотреть на поле"
+      goto: field
+- name: mashina
+  picture: 3.jpg
+  text: "ты видишь машину"
+  opts:
+    - text: "сесть"
+      goto: gorish
+    - text: "курить еще"
+      goto: kurevo
+- name: gorish
+  animation: 4.gif
+  text: "ты медведь, ты горишь"

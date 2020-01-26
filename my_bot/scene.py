@@ -31,10 +31,13 @@ class Scene:
 
     def show(self, game_context):
         if SHOW_PICTURES:
-            if self.picture:
-                game_context.picture_sender.send_picture(game_context.chat_id, self.picture)
-            if self.animation:
-                game_context.picture_sender.send_animation(game_context.chat_id, self.animation)
+            try:
+                if self.picture:
+                    game_context.picture_sender.send_picture(game_context.chat_id, self.picture)
+                if self.animation:
+                    game_context.picture_sender.send_animation(game_context.chat_id, self.animation)
+            except FileNotFoundError as e:
+                print("file not found", e)
         reply_markup = None
         if self.opts:
             reply_markup = ReplyKeyboardMarkup([[KeyboardButton(text=opt.text)] for opt in self.opts])
